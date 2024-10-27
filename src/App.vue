@@ -33,10 +33,18 @@
             </td>
         </tr>
     </table>
+
+    <!-- This is to show the application breaking after editing the input field without .value -->
+    <div>
+        <p style="margin-bottom: 0">Counter: {{ counter }}</p>
+        <button @click="counter++">Count +1</button>
+    </div>
 </template>
 
 <script setup lang="ts">
 import { ref, shallowReactive, type Ref } from "vue";
+
+const counter = ref(0);
 
 interface MyItem {
     name: Ref<string>;
