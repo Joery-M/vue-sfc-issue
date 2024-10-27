@@ -7,6 +7,10 @@
             <th>With .value</th>
         </thead>
         <tr v-for="item in items" :key="item.id">
+            <!--   ^^^^
+                See intellisense here
+            -->
+
             <!-- Extension marks this as incorrect -->
             <td>{{ item.name.value }}</td>
             <td>
