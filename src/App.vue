@@ -1,10 +1,12 @@
 <template>
     <table style="width: 1000px">
         <thead>
-            <th>Template with .value</th>
-            <th>Template without .value</th>
-            <th>v-model without .value</th>
-            <th>With .value</th>
+            <tr>
+                <th>Template with .value</th>
+                <th>Template without .value</th>
+                <th>v-model without .value</th>
+                <th>With .value</th>
+            </tr>
         </thead>
         <tr v-for="item in items" :key="item.id">
             <!--   ^^^^
